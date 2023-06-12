@@ -1,6 +1,4 @@
-*,
-*::after,
-*::before{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,15 +7,25 @@
 h1{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .container-fluid{
-    background-color: rgb(113, 112, 112);
+    background-color:  rgb(113, 112, 112);
 }
-.navbarNav{
-   
-}
+ 
 body{
     background-color: gray;
 }
+
+
+.banner{
+    background-image:url('https://i.postimg.cc/GmgWr5hW/guitarshomepg.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: hotpink;
+    text-align: center;
+    
+}
+
