@@ -1,10 +1,23 @@
-*{
+*,
+*::after,
+*::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-img{
-    width: 100%;
-    position: relative;
+
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
 }
 
+.container-fluid{
+    background-color: rgb(113, 112, 112);
+}
+.navbarNav{
+   
+}
+body{
+    background-color: gray;
+}
