@@ -1,5 +1,8 @@
+
+// the list
+let products = JSON.parse(localStorage.getItem('product')) ? JSON.parse(localStorage.getItem('product')) : [];
 //products page 
-let products = [
+let hardCodedProducts = [
     { id: 1,
     products_image:'https://i.postimg.cc/6pSfcqRg/gibson-lespaulclassic.jpg',
     products_title:'Gobson Les Paul Classic, Heritage Cherry Sunburst',
@@ -43,6 +46,21 @@ let products = [
         products_image:'https://i.postimg.cc/vTTNV2Cf/cort-cort-g250-spectrum-metallic-purple-electric-g.webp',
         products_title: 'Cort G250 Spectrum pink',
         products_text: 'G250 Spectrum is designed for guitarists that seek a simple, slick-looking guitar with retro styling and colors that pop, while applying essential advanced components to make the guitar both greatly playable and enjoyable. Colorful sparkling metallic finishes with matching headstock bring back nostalgia of the modern-retro era.',
+    },{
+        id: 10,
+        products_image:'https://i.postimg.cc/WpH5FrRr/bass-starter-pack.webp',
+        products_title: 'Bass Starter Pack',
+        products_text: 'This is our bass starter pack for beginners . The Stagg Standard Bass comes with a 15Watt Stagg Bass amp for a deep bass sound or perhaps a light bass sound, reverb , distortion and more. You are able to plug in your headsets as you play along.Comes with a guitar casing, jack-to-jack and strap!',
+    },{
+        id: 11,
+        products_image:'https://i.postimg.cc/rpyr8npk/yamaha.jpg',
+        products_title: 'Yamaha Bass Guitar Red Metallic',
+        products_text: 'TRBX500 has a simple brief tone. Premium mahogany construction and an ultra-musical active/passive pre-amp design deliver the flexibility and sheer tonal quality to allow you to sculpt the perfect sound for your music. This Bass Red metallic color gives a rather rock-like impression,which is what its built for.',
+    },{
+        id: 12,
+        products_image:'https://i.postimg.cc/v8vdJbKD/ibanez-jumpstsart.webp',
+        products_title: 'Ibanez Jump Start',
+        products_text:'One of our popular Jumpstart packs for Bass. This is more of an intermediate phase Jumpstart pack. Provided with an Ibanez Amp, a tuner and a jack-to-jack, headsets, strap and a guitar stand, what a better way to start off on your intermediate phase. Enjoy a more slapping technique on the bass!  ',
     }
 
 
@@ -51,7 +69,7 @@ let products = [
 // so cards can display
 let output = document.querySelector('#product')
 
-products.forEach((reveal) =>{
+hardCodedProducts.forEach((reveal) =>{
     output.innerHTML+= `
     
   <div class="col">
@@ -62,10 +80,27 @@ products.forEach((reveal) =>{
         <h5 class="card-title">${reveal.products_title}</h5>
         <p class="card-text">${reveal.products_text}</p>
         <button type="button" class="btn btn-primary btn-sm">Small button</button>
-
-        
       </div>
     `
 })
 
- 
+ //output target number 2
+let displayFromStrorage = document.querySelector('#localProducts')
+// Product list 
+function product_show(){
+    products.forEach(Element => {
+        displayFromStrorage.innerHTML+=`
+        <div class="col">
+        <class="card h-100">
+          <img src="${Element.P_image}" class="card-img-top" alt="..." style="object-fit:contain;
+          aspect-ratio: 3/2;";>
+          <div class="card-body">
+            <h5 class="card-title">${Element.P_name}</h5>
+            <p class="card-text">${Element.P_info}</p>
+            <p class="card-text">${Element.P_price}</p>
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+          </div>
+        `
+    })
+}
+product_show()

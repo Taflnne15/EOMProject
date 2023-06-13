@@ -3,5 +3,9 @@ p{
    font-weight: 500;
 }
 h2{
+   
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+main{
+    background-color: darkgray;
 }
