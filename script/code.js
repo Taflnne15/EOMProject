@@ -46,8 +46,3 @@ function display(){
 }
 
 display()
-
-
-
-
- 

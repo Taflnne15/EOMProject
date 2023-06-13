@@ -29,4 +29,10 @@ body{
     text-align: center;
     
 }
+footer{
+    text-align: center;
+    border-top: 4px solid black;
+    font-weight: 500;
+    background-color: darkgray;
+}
 
