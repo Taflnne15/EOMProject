@@ -50,7 +50,7 @@
               <a class="nav-link active" href="../html/admin.html">Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../html/checkout.html">Checkout</a>
+              <a class="nav-link active"  type="button" data-bs-toggle="modal" data-bs-target="#checkout">Checkout</a>
               
               
             </li>
@@ -62,7 +62,7 @@
     <main>
       <section>
         <h1>Products</h1>
-        <h2>Guitar Maniacs Fast sell-outs</h2>       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact Us</button>
+        <h2>Guitar Maniacs Fast sell-outs</h2>       <button type="button" class="btn-btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact Us</button>
 
       
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -76,19 +76,19 @@
                 <form>
                   <div class="mb-3">
                     <label for="recipient-name" class="col-form-label">FullName </label>
-                    <input type="text" class="form-control" id="recipient-name">
+                    <input type="text" class="form-control" id="recipient-name" name="recipient-name">
                   </div>
                   <div class="mb-3">
                     <label for="message-text" class="col-form-label">Email</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                    <textarea class="form-control" id="email-text" name="email-name"></textarea>
                   </div>
                   <div class="mb-3">
                     <label for="recipient-name" class="col-form-label">Cellphone Number</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                    <input type="text" class="form-control" id="cellnumber-number" name="cellnumber-number">
                   </div>
                   <div class="mb-3">
                     <label for="recipient-name" class="col-form-label"></label>Leave a messsage below</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                    <input type="text" class="form-control" id="message-name" name="message-name">
                   </div>
                 </form>
               </div>
@@ -111,12 +111,35 @@
         </div>
       </section>
     </main>
+
+
     <footer class="footer">
       <p>copyright &copy;Taflyne Summer Petersen 2023
       <br>Email us @GuitarManiacs.gmail.com<br>
       Call us @ 021 480 5566<br>
-      <a href="https://www.instagram.com/?hl=en" target="_blank" ><img src="https://i.postimg.cc/wT96qWK0/instagram.png" loading="lazy" width="70px" height="70px" alt="instagram"></a>
+      
       </p>
+        
+<!--CHECKOUT -->
+<!-- Modal -->
+<div class="modal fade" id="checkout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="../index.html"><button type="button" class="btn btn-primary" href="../html/" >Save changes</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------->
       </footer>
   <!-- PRODUCTS -->
     <script src="../script/products.js"></script>

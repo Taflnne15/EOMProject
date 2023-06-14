@@ -33,7 +33,7 @@
               <a class="nav-link active" href="../html/admin.html">Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../html/checkout.html">Checkout</a>
+              <a class="nav-link active" type="button" data-bs-toggle="modal" data-bs-target="#checkout">Checkout</a>
             </li>
           </ul>
         </div>
@@ -87,7 +87,7 @@
           <th>Name</th>
           <th>Description</th>
           <th>Price</th>
-          <th>Image</th>
+          <th>Image</th><button class="edit-btn">Edit</button><button class="del-btn">Delete</button>
         </tr>
         <tbody class="whereTheyDisplay">
           
@@ -95,11 +95,32 @@
        
       </table>
 
+        
+<!--CHECKOUT -->
+<!-- Modal -->
+<div class="modal fade" id="checkout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="../index.html"><button type="button" class="btn btn-primary" href="../html/" >Save changes</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------->
+
       <footer class="footer">
         <p>copyright &copy;Taflyne Summer Petersen 2023
         <br>Email us @GuitarManiacs.gmail.com<br>
         Call us @ 021 480 5566<br>
-        <a href="https://www.instagram.com/?hl=en" target="_blank" ><img src="https://i.postimg.cc/wT96qWK0/instagram.png" loading="lazy" width="70px" height="70px" alt="instagram"></a>
         </p>
         </footer>
       <!-- code.js linking -->

@@ -8,6 +8,7 @@ let P_price = document.querySelector('#product-price')
 let P_image = document.querySelector('#product-image') 
 // OUTPUT TARGET
 let whereMyProductsDisplay = document.querySelector('.whereTheyDisplay')
+let btn = document.querySelector('.btn')
 
 // the list
 let products = JSON.parse(localStorage.getItem('product')) ? JSON.parse(localStorage.getItem('product')) : [];
@@ -40,7 +41,7 @@ function display(){
         <td>R${Element.P_price}</td>
         <td><img src="${Element.P_image}" alt="" width="100px" heigth="100px"></td>
         </tr>
-            
+        
         `
     });
 }

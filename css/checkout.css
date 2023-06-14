@@ -1,0 +1,21 @@
+main{
+    background-color: darkgray;
+}
+footer{
+    background-color: gray;
+    border-top: 2px solid black;
+    text-align: center;
+    font-weight: 900;
+}
+/* input{
+    margin-top: 30px;
+} */
+.form-control{
+    margin-top: 30px;
+    color: black;
+}
+ .btn-primary{
+
+
+    
+ }
