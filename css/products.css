@@ -14,4 +14,12 @@ h2{
     box-shadow: 0.3rem 0.3rem grey;
 
 }
-/* rgb(237, 106, 128) pink color */
+.container .btn{
+    background-color: hotpink;
+    color: black;  
+    border: 4px darkgray;
+}
+.btn-btn-primary{
+color: black;
+background-color: hotpink;
+}

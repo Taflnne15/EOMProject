@@ -9,3 +9,7 @@ tr{
 td{
     text-align:center;
 }
+button{
+    display: flex;
+    justify-content: right;
+}

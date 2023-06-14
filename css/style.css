@@ -28,11 +28,12 @@ body{
     color: hotpink;
     text-align: center;
     
+    
 }
 footer{
     text-align: center;
-    border-top: 4px solid black;
-    font-weight: 500;
-    background-color: darkgray;
+    border-top: 2px solid black;
+    font-weight: 900;
+    background-color:gray;
 }
 
