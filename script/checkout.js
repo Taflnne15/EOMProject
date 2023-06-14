@@ -1,5 +1,5 @@
 function total(){
-  let idAdd = parseInt(prompt('Please confirm'));  //input id
+  // let idAdd = parseInt(prompt('Please confirm'));  //input id
   let  = newTarget= list.find(function(locate){
      return locate.id == idAdd;
   })

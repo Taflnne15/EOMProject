@@ -21,7 +21,7 @@ body{
 
 
 .banner{
-    background-image:url('https://i.postimg.cc/GmgWr5hW/guitarshomepg.jpg');
+    /* background-image:url('https://i.postimg.cc/GmgWr5hW/guitarshomepg.jpg'); */
     height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;

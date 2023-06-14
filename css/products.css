@@ -1,5 +1,5 @@
 main{
-    background-color:white
+    background-color: white;
 }
 h2{
     text-align: center;
@@ -18,8 +18,10 @@ h2{
     background-color: hotpink;
     color: black;  
     border: 4px darkgray;
+   
 }
-.btn-btn-primary{
+button{
 color: black;
 background-color: hotpink;
+
 }
