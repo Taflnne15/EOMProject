@@ -3,9 +3,20 @@ p{
    font-weight: 500;
 }
 h2{
-   
+   color: hotpink;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 main{
     background-color: darkgray;
+}
+@media only screen and (max-width: 700px) {
+    main{
+      
+    }
+}
+@media only screen and (max-width: 300px){
+   .image{
+        width:100px
+        ;
+    }
 }
