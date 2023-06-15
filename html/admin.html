@@ -39,9 +39,21 @@
         </div>
       </div>
   </nav>
-   
 
 
+  <div class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    
+
+  
+<!--    
+
+******************************************************************************************************************************************** -->
       <main>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add Products</button>
 
@@ -54,25 +66,24 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form>
 
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label">Name of Product</label>
-                  <input type="text" class="form-control" id="product-name">
+                  <input type="text"  id="product-name">
                 </div>
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Description of Product</label>
-                  <textarea class="form-control" id="message"></textarea>
+                  <textarea  id="message"></textarea>
                 </div>
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label">Price</label>
-                  <input type="text" class="form-control" id="product-price">
+                  <input type="text"  id="product-price">
                 </div>
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label">Insert Image Link<img src="" alt=""></label>
-                  <input type="text" class="form-control" id="product-image">
+                  <input type="text"  id="product-image">
                 </div>
-              </form>
+         
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -90,7 +101,7 @@
           <th>Price</th>
 
         </tr>
-        <tbody class="whereTheyDisplay">
+        <tbody id="whereTheyDisplay">
           
         </tbody>
        

@@ -1,6 +1,4 @@
 
-
-
 //products page 
 let products = [
     { id: 1,
@@ -78,49 +76,22 @@ let products = [
 
 localStorage.setItem('products', JSON.stringify(products))
 
+function output() {
+    let products
+    if(localStorage.getItem('products') == null) {
+        products = [];
+    }else {
+        products = JSON.parse(localStorage.getItem('products'))
+    }
 
+    let output = document.querySelector('#whereTheyDisplay')
 
+    output.innerHTML = "";
 
-// pushing the object value
-function add(){
-    let P_id = document.querySelector('#product-id') 
-    //get name
-    let P_name = document.querySelector('#product-name') 
-     //get message
-    let P_info = document.querySelector('#message')
-    //get price
-    let P_price = document.querySelector('#product-price') 
-    //get image
-    let P_image = document.querySelector('#product-image') 
-    // OUTPUT TARGET
-    let whereMyProductsDisplay = document.querySelector('.whereTheyDisplay')
-    let btn = document.querySelector('.btn')
-
-    products.push(
-        {
-            P_id :P_id,
-            P_name: P_name.value,
-            P_info: P_info.value,
-            P_price: P_price.value,
-            P_image: P_image.value
-        }
-    )
-    
-    localStorage.setItem('products',JSON.stringify(products));
-    
-    window.location.reload();
-
-}
-
-// console.log(products);
-
-
-// DISPLAY
-function display(){
     products.forEach((item) => {
-        whereMyProductsDisplay.innerHTML+=`
-       <tr>
-       
+        output.innerHTML += `
+        <tr>
+   
         <td>${item.products_title}</td>
         <td>${item.products_text}</td>
         <td>R${item.products_btn}</td>
@@ -129,9 +100,81 @@ function display(){
         <td><button class="del-btn" onclick="deleteProduct() ">Delete</button></td>
         </tr>
         `
-    });
+    })
 }
-display()
+
+document.onload = output();
+
+// DISPLAY
+// function display(){
+//     // OUTPUT TARGET
+//     let whereMyProductsDisplay = document.querySelector('.whereTheyDisplay')
+
+// whereMyProductsDisplay.innerHTML = "";
+
+// products.forEach((item) => {
+//     whereMyProductsDisplay.innerHTML+=`
+//    <tr>
+   
+//     <td>${item.products_title}</td>
+//     <td>${item.products_text}</td>
+//     <td>R${item.products_btn}</td>
+//     <td><img src="${item.products_image }" alt="" width="100px" heigth="100px"></td>
+//     <td><button class="edit-btn">Edit</button></td>
+//     <td><button class="del-btn" onclick="deleteProduct() ">Delete</button></td>
+//     </tr>
+//     `
+// });
+// }
+// document.onload = display();
+
+
+// pushing the object value
+function add(){
+    //get name
+    let name = document.querySelector('#product-name').value 
+     //get message
+    let info = document.querySelector('#message').value
+    //get price
+    let price = document.querySelector('#product-price').value 
+    //get image
+    let image = document.querySelector('#product-image').value 
+
+    let products
+    if(localStorage.getItem('products') == null) {
+        products = [];
+    }else {
+        products = JSON.parse(localStorage.getItem('products'))
+    }
+
+    // console.log(products);
+
+    products.push(
+        {
+            products_title: name,
+            products_text: info,
+            products_btn: price,
+            products_image: image
+        }
+    )
+
+    localStorage.setItem('products',JSON.stringify(products));
+    output()
+
+    name = document.querySelector('#product-name').value = ""; 
+
+   info = document.querySelector('#message').value = "";
+
+   price = document.querySelector('#product-price').value = ""; 
+
+   image = document.querySelector('#product-image').value = ""; 
+}
+
+// console.log(products);
+
+
+let btn = document.querySelector('.btn')
+
  
 
 //REMOVE PRODUCT

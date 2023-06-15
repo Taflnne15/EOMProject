@@ -16,3 +16,10 @@ button{
 @media  only screen and (max-content) {
     
 }
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+table tr th  {
+    border-bottom: 2px solid black;
+}
