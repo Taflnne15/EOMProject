@@ -13,3 +13,6 @@ button{
     display: flex;
     justify-content: right;
 }
+@media  only screen and (max-content) {
+    
+}
