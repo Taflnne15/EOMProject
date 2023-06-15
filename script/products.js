@@ -7,7 +7,7 @@ hardCodedProducts.forEach((reveal) => {
     output.innerHTML += `
     
   <div class="col">
-    <class="card h-100">
+    <class="card h-100" >
       <img src="${reveal.products_image}" class="card-img-top" alt="..." style="object-fit:contain;
       aspect-ratio: 3/2;";>
       <div class="card-body">

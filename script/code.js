@@ -90,12 +90,11 @@ function output() {
 
     products.forEach((item) => {
         output.innerHTML += `
-        <tr>
-   
+        <tr class="tr">
         <td>${item.products_title}</td>
         <td>${item.products_text}</td>
         <td>R${item.products_btn}</td>
-        <td><img src="${item.products_image }" alt="" width="100px" heigth="100px"></td>
+        <td><img src="${item.products_image }" alt="" width="50px" heigth="50px"></td>
         <td><button class="edit-btn">Edit</button></td>
         <td><button class="del-btn" onclick="deleteProduct() ">Delete</button></td>
         </tr>
